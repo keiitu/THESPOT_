@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Spot</title>
+
+    <!--Linking CSS Stylesheet-->
+    <link rel="stylesheet" href="css_assets/style.css">
+
+    <link rel="Icon" href="_images/thespot_Logo-favicon.png">
+
+</head>
+
+<!--Stylistic choices are outlined in the attached proposal. Editory choices are made
+as the project is being developed. There is a note file attached to outline some of the major changes.-->
+<!--Side bar will be for snippets of some of the content in the other sections of the website-->
+
+<body class="body" >
+    <!--The header displays the logo, and
+    a navigation bar for users to visit other sections of the website-->
+
+    <header class="header">
+        <!--<h1 class="title-heading">THE SPOT</h1>-->
+        <!--Adopted an SVG icon for the logo as they do not lose quality when scaled-->
+        <!-- <h1><img src="/_images/thespot_logo.png" width="90" height="90"> -->
+
+        <img class="main-logo" src="_images/thespot_Logo.svg" alt="splashing background with words in the center">
+
+        <!--quick navigation for users to track what page they are on-->
+        <nav class="menu">
+            <div class="linklist">
+
+                <div class="home_link">
+
+                    <a href="index.html">Home</a>
+                </div>
+
+                <div class="realms_link">
+
+                    <a href="_realms/realms.html">Realms</a>
+                </div>
+                <div class="blog_link">
+
+                    <a href="art-and-mind/blog.html">Art and The Mind</a>
+                </div>
+                <div class="about_link">
+
+                    <a href="about.html">About</a>
+                </div>
+                <div class="services_link">
+
+                    <a href="services.html">Services</a>
+                </div>
+                <div class="contact_link">
+                    <a href="contact_us.html">Contact Us</a>
+                </div>
+                    <div class="enquiries_link">
+                    <a href="enquiries.html">Enquiries</a>
+                </div>
+            </div>
+        </nav>
+        <br>
+
+    </header>
+    <!-- <hr> -->
+    <!-- Introduces the main content of the page -->
+    <main class="main_content">
+        <h1 class="welcome_message">Welcome to <span class="orgname">THE SPOT</span></h1>
+        <!--A brief introduction to the webpage-->
+        <p class="intromessage"> You can find art here as proof of an inner journey.
+            Each piece in our collection was made to explore thought,
+            emotion, or memory.
+            Browse six immersive realms, discover the voices behind the work,
+            and if you'd like, look into mental health services to help you on your own journey.
+        </p>
+
+        <!--Hero Image and Founder's Quote-->
+        <figure class="landingheroimage">
+            <img src="_images/_indexgallery/welcome_heroimg-averyevans.jpg" alt="statue of a man sitting down.">
+            <figcaption class="landinghero-title">The Thinker &ndash; Unsplash</figcaption>
+        </figure>
+            <br>
+            <!--Realm teaser through featured artworks-->
+            <section class="featuredart">
+                <h2 class="featuredartworkhome">Featured Artwork</h2>
+                <ul>
+                    <div>
+
+                        <img src="_images/inknpen_gallery/artwork3_keitumetse.jpg" alt="abstract object in ink" width="100%">
+                    </div>
+                    <div>
+
+                        <img src="_images/inknpen_gallery/artwork4_keitumetse.jpg" alt="abstract figure head" width="100%">
+                    </div>
+                    <div>
+
+                        <img src="_images/inknpen_gallery/artwork2_keitumetse.jpg" alt="abtract flower head" width="100%">
+                    </div>
+                </ul>
+                <p><strong>The Study</strong> &ndash; Keitumetse.</p>
+
+            </section>
+
+
+            <br>
+            <!--Realms grid section for each art medium-->
+            <section class="realmgridcta">
+                <h2 class="realmctaheading">Every realm is a doorway, which one calls to you?</h2>
+
+                    <div class="realmgallerycta">
+                        <div>
+                            <a href="_realms/penandink.html">
+                                <h3>Ink Corridors</h3>
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <div class="realmgallerycta">
+                        <div>
+                            <a href="_realms/pencilsketch.html">
+                                <h3>Graphite Pathways</h3>
+
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="realmgallerycta">
+                        <div>
+                            <a href="_realms/charcoaldepths.html">
+                                <h3>Charcoal Depths</h3>
+
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="realmgallerycta">
+                        <div>
+                            <a href="_realms/oilpainting.html">
+                                <h3>Pigment Fields</h3>
+
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="realmgallerycta">
+                        <div>
+                            <a href="_realms/watercolor.html">
+                                <h3>Watercolor Drifts</h3>
+
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="realmgallerycta">
+                        <div>
+                            <a href="_realms/digitalart.html">
+                                <h3>Digital Dreamscape</h3>
+                            </a>
+                        </div>
+                    </div>
+
+
+            </section>
+
+
+
+            <!--Blog snippets; self authored. Artist interview to be implemented at a later stage-->
+
+            <aside class="resource_directorycta">
+                <h3>Sometimes the canvas is not enough</h3>
+                <p>Art can hold what words fail to convey. But when the weight inside feels too heavy to carry alone,
+                    there are people who want to listen.
+                </p>
+                <p><strong>You are not alone.</strong> In our <a href="art-and-mind/resource_directory.html">Mental Health Resource Directory</a>,
+                    you will find South African organisations (SADAG, NICRO, SAFMH) offering free helplines, support groups, and practical tools.
+                </p>
+                <p><em>A single conversation can be a line back to yourself</em></p>
+                <a href="art-and-mind/resource_directory.html">Explore the directory</a>
+
+
+            </aside>
+            <br>
+
+
+        <br>
+
+        <br>
+        <aside class="jointhespotcta">
+
+            <h2>Become a part of <span class="orgname">THE SPOT!</span></h2>
+            <p><a href="services.html">Find out how you can join us and get involved</a></p>
+            <img src="_images/_indexgallery/calltoaction1_.jpg" alt="People interacting around a giant megaphone with speech bubbles.">
+            <p><strong> </strong></p>
+
+        </aside>
+
+
+
+
+
+    </main>
+    <footer class="footer">
+
+
+
+       <br>
+           <div class="newsletterinputfield">
+           <!--User input buttons and text-->
+            <h4 class="newsletterhead">Newsletter Signup</h4>
+               <form>
+
+                   <input type="text" placeholder="Email address"> <button class="btn">Subscribe</button>
+
+
+               </form>
+           </div>
+       <br>
+
+       <div class="footerquicknav">
+         <div class="linklist">
+
+             <a href="about.html">About</a>
+             <a href="submit_art.html">Submit Art</a>
+             <a href="contact_us.html">Contact Us</a>
+         </div>
+       </div>
+
+
+
+
+       <br>
+       <div class="socialmedialinks">
+           <h4 class="socialmediavisit">Visit our social media pages</h4>
+           <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a><br>
+           <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a><br>
+       </div>
+
+
+
+
+
+       <p class="orgcopyright">&copy;2023 THE SPOT. All rights reserved.</p>
+
+    </footer>
+
+</body>
+
+
+</html>
