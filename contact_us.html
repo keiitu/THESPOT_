@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
-
-       <!--Linking CSS Stylesheet-->
+    <meta name="description" content="Get in touch with THE SPOT. Send us a message or visit our gallery in Pretoria.">
+    <meta name="keywords" content="contact, art gallery, Pretoria, email, message, gallery address, phone, enquiries">
+      <!-- CSS Libraries -->
+    <!-- Lightbox2 CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
+    <!--Linking CSS Stylesheet-->
     <link rel="stylesheet" href="css_assets/style.css">
-
+    <!-- Displays website favicon -->
     <link rel="Icon" href="_images/thespot_Logo-favicon.png">
 
 </head>
@@ -76,32 +80,35 @@ as the project is being developed. There is a note file attached to outline some
         <p class="formcta">We would love to hear from you! Please fill out the form below or use the contact information provided</p>
 
         <section class="formdetails">
-            <form class="formfield">
-                <ul class="contactformdetailinput">
+            <form id="contactForm">
+                <div class="formfield">
 
-                    <h4 class="forminputtitle">Name</h4>
-                    <input type="text" class="forminput">
+                    <ul class="contactformdetailinput">
 
-                    <h4 class="forminputtitle" >Email address</h4>
-                    <input type="text" class="forminput">
+                        <h4 class="forminputtitle">Name</h4>
+                        <input type="text" class="forminput">
 
-                    <h4 class="forminputtitle">Subject</h4>
-                    <input type="text" class="forminput">
+                        <h4 class="forminputtitle" >Email address</h4>
+                        <input type="text" class="forminput">
 
-                    <h4 class="forminputtitle">Message</h4>
-                    <input type="text" class="forminput">
-                    <sub>
-                        <em>500 Characters <b>MAX</b>
-                        </em>
-                    </sub>
-                    <br>
-                    <div class="formsendamessage">
+                        <h4 class="forminputtitle">Subject</h4>
+                        <input type="text" class="forminput">
+
+                        <h4 class="forminputtitle">Message</h4>
+                        <input type="text" class="forminput">
+                        <sub>
+                            <em>500 Characters <b>MAX</b>
+                            </em>
+                        </sub>
+                        <br>
+                        <div class="formsendamessage">
 
 
-                        <button class="btn">Send Messsage</button>
-                    </div>
+                            <button class="btn">Send Messsage</button>
+                        </div>
 
-                </ul>
+                    </ul>
+                </div>
             </form>
         </section>
 
@@ -200,6 +207,25 @@ as the project is being developed. There is a note file attached to outline some
 
     </footer>
     </main>
+
+        <!-- Javascript Libraries -->
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <!-- jQuery Validation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.20.0/jquery.validate.min.js"></script>
+
+    <!-- Typed.js (For hero typewriter effect) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"></script>
+
+    <!-- GSAP (For animations) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <!-- Linking custom Javascript files -->
+    <script src="js_assets/libraries.js"></script>
+    <script src="js_assets/main.js"></script>
+    <script src="js_assets/contact.js"></script>
 
 </body>
 
