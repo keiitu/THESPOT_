@@ -644,7 +644,7 @@ input{
     grid-template-columns: 2fr 1fr;
     gap: var(--spacing-sm);
 }
-/* for every realm card */
+/* styles every realm card within the realms gallery*/
 .inkcorridorscta, .graphitepathwayscta, .pigmentfieldscta, .watercolorcta, .digitaldreamscapecta, .charcoaldepthscta{
     background-color: var(--threshold);
     border-radius: var(--border-radius-md);
@@ -740,11 +740,18 @@ input{
 .charcoaldepthsmain section div, .digitaldreamscapesmain section div, .pigmentfieldsmain section div, .inkcorridorsmain section div, .graphitepathwaysmain section div, .watercolormain section div{
     text-align: center;
 }
-.charcoaldepthsmain section img, .digitaldreamscapesmain section img, .pigmentfieldsmain section img, .inkcorridorsmain section img, .graphitepathwaysmain section img, .watercolormain section img{
+.charcoaldepthsmain section img, .graphitepathwaysmain section img, .digitaldreamscapesmain section img, .pigmentfieldsmain section img, .inkcorridorsmain section img,.watercolormain section img{
     max-width: 100%;
     height: auto;
     border-radius: var(--border-radius-md);
     transition: transform 0.2s, box-shadow 0.2s;
+}
+/* Styles Graphite Pathways Realm */
+.imagecontainer{
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-lg);
+    margin: auto auto;
 }
 .charcoaldepthsmain section img:hover, .digitaldreamscapesmain section img:hover, .pigmentfieldsmain section img:hover, .inkcorridorsmain section img:hover, .graphitepathwaysmain section img:hover, .watercolormain section img:hover{
     transform:scale(1.02);
