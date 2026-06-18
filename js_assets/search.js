@@ -72,7 +72,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
   if (galleryImages.length > 0) {
     // Add a subtle filter if needed (e.g., filter by medium or keyword)
-    // For now, let's add a search for artwork titles (if we have title attributes)
     // This is a placeholder for future enhancement
   }
 });
