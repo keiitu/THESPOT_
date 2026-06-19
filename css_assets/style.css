@@ -580,6 +580,36 @@ input{
   background: var(--witness);
 }
 
+/* Fix for dropdown label overlapping */
+.floating-group select {
+  width: 100%;
+  padding: 1rem 1rem 0.5rem 1rem;
+  border: 1px solid var(--threshold);
+  border-radius: var(--border-radius-sm);
+  background-color: var(--witness);
+  color: var(--void);
+  font-family: var(--body-font);
+  font-size: 1rem;
+  /* appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none; */
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+
+/* Move label up when dropdown has a value selected */
+.floating-group select:focus + label,
+.floating-group select:not(:placeholder-shown) + label {
+  top: -0.5rem;
+  left: 0.8rem;
+  font-size: 0.7rem;
+  color: var(--portal);
+  /* background: var(--witness); */
+  padding: 0 0.3rem;
+  z-index: 3;
+}
+
 .maps{
     display: block;
     align-items:center;
