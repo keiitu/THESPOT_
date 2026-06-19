@@ -539,28 +539,22 @@ input{
     }
 .floating-group {
   position: relative;
-  margin-bottom: var(--spacing-sm);
-  max-width: 1000px;
-
+  margin-bottom: var(--spacing-md);
 }
 
-.floating-group input, .floating-group textarea {
+.floating-group input,
+.floating-group textarea,
+.floating-group select {
   width: 100%;
+  max-width: 500px;
   padding: 1rem 1rem 0.5rem 1rem;
-  border: 1px solid var(--threshold);
   border-radius: var(--border-radius-sm);
+  border: 1px solid var(--threshold);
   background-color: var(--witness);
   color: var(--void);
   font-family: var(--body-font);
   font-size: 1rem;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
-  position: relative;
-  z-index: 1;
-}
-
-.floating-group textarea {
-  min-height: 100px;
-  resize: vertical;
 }
 
 .floating-group label {
@@ -573,7 +567,17 @@ input{
   transition: all 0.2s ease;
   background: var(--witness);
   padding: 0 0.2rem;
-  z-index: 5;
+}
+
+.floating-group input:focus + label,
+.floating-group input:not(:placeholder-shown) + label,
+.floating-group textarea:focus + label,
+.floating-group textarea:not(:placeholder-shown) + label {
+  top: -0.5rem;
+  left: 0.8rem;
+  font-size: 0.7rem;
+  color: var(--portal);
+  background: var(--witness);
 }
 
 .maps{

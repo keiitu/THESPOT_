@@ -73,34 +73,35 @@ as the project is being developed. There is a note file attached to outline some
             <h2>Become a partner or volunteer</h2>
             <img src="_images/volunteer-partner-community-engagement.jpg" alt="Engaged community" width="800" height="450">
             <form>
-                <p>
-                    <label>Full name:</label>
-                    <br>
-                    <input type="text" required>
-                </p>
-                <p>
-                    <label>Email Address:</label>
-                    <br>
-                    <input type="text" required>
-                </p>
-                <p>
-                    <label>I am interested in:</label>
-                    <br>
-                    <select required>
-                        <option>--Please select--</option>
-                        <option>Partnership (Organisation)</option>
-                        <option>Volunteering</option>
-                        <option>Interview</option>
-                        <option>Speaking engagement</option>
-                        <option>Other</option>
-                    </select><br>
+              <div class="floating-group">
+                <input type="text" id="enquiry-name" name="name" placeholder=" " required>
+                <label for="enquiry-name">Full Name</label>
+                </div>
 
-                    <input type="text" placeholder="Specify if chosen other">
-                    <button>submit</button>
+                <div class="floating-group">
+                <input type="email" id="enquiry-email" name="email" placeholder=" " required>
+                <label for="enquiry-email">Email Address</label>
+                </div>
 
+                <div class="floating-group">
+                <select id="enquiry-interest" name="interest" required>
+                    <option value="">-- Please select --</option>
+                    <option value="Partnership (Organisation)">Partnership (Organisation)</option>
+                    <option value="Volunteering">Volunteering</option>
+                    <option value="Interview">Interview</option>
+                    <option value="Speaking engagement">Speaking engagement</option>
+                    <option value="Other">Other</option>
+                </select>
 
+                <label for="enquiry-interest">I am interested in</label>
+                </div>
 
-                </p>
+                <div class="floating-group">
+                <input type="text" id="enquiry-other" name="other" placeholder=" " style="display:none;">
+                <label for="enquiry-other" style="display:none;">Please specify</label>
+                </div>
+
+                <button type="submit" class="btn">Send Enquiry</button>
 
             </form>
 
