@@ -205,7 +205,11 @@ main.main_content{
 /*styles the organisation name in the welcome message*/
 .orgname{
     text-decoration: underline;
-    color: var(--portal);
+    color: var(--void);
+    background-color: var(--flicker);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--border-radius-sm);
+
 }
 .intromessage{
     padding: 5px;
@@ -259,7 +263,7 @@ main.main_content{
 
 /* Realm grid for realm section CTA*/
 .realmgallerycta{
-    background-color: var(--threshold);
+    background-color: var(--void);
     border-radius: var(--border-radius-md);
     padding: var(--spacing-sm);
     text-align: center;
@@ -292,7 +296,7 @@ main.main_content{
 
 /* Styles aside tags in the homepage */
 .resource_directorycta, .jointhespotcta {
-    background-color: var(--threshold);
+    background-color: var(--void);
     border-left:4px solid var(--flicker);
     padding: var(--spacing-md);
     margin: var(--spacing-lg) 0;
