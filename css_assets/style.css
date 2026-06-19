@@ -354,14 +354,7 @@ main.main_content{
     width:200px;
     margin-right: var(--spacing-xs)
 }
-.btn{
-    background-color: var(--portal);
-    color: var(--witness);
-    border: none;
-    padding:var(--spacing-xs) var(--spacing-sm);
-    border-radius:var(--border-radius-lg);
-    cursor:pointer;
-    transition: 0.2s;
+
 }
 .newslettersub:hover{
     background-color: #6a2be0;
@@ -397,6 +390,14 @@ main.main_content{
     opacity:0.7;
 
 } */
+ .btn{
+    background-color: var(--portal);
+    color: var(--witness);
+    border: none;
+    padding:var(--spacing-xs) var(--spacing-sm);
+    border-radius:var(--border-radius-lg);
+    cursor:pointer;
+    transition: 0.2s;}
 /* Responsiveness: Tablet(min-width 640px */
 @media(min-width: 640px){
     body.body{
