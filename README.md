@@ -39,6 +39,10 @@ benchmarks 	for
 accessible web design. It should also achieve a
 relatively high mobile friendly score
 
+# Sitemap
+![website sitemap](_images/sitemap.png)
+
+
 # References
 
 Artspace. 2025. Artspace. [Online]. Available at: https://artspace.org/  [Accessed 1 April 2026].
