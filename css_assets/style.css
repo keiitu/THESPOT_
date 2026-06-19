@@ -205,8 +205,8 @@ main.main_content{
 /*styles the organisation name in the welcome message*/
 .orgname{
     text-decoration: underline;
-    color: var(--void);
-    background-color: var(--flicker);
+    color: var(--flicker);
+    /* background-color: var(--flicker); */
     padding: var(--spacing-xs) var(--spacing-sm);
     border-radius: var(--border-radius-sm);
 
@@ -740,7 +740,7 @@ input{
     margin-bottom: var(--spacing-sm);
 }
 .blogsnippet{
-    padding: var(--spacing-s);
+    padding: var(--spacing-md);
     position: relative;
     left: var(--spacing-sm);
     background-color: var(--void);
