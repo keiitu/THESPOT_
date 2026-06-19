@@ -84,27 +84,42 @@ as the project is being developed. There is a note file attached to outline some
                 <div class="formfield">
 
                     <ul class="contactformdetailinput">
+                     <!-- Full Name -->
+                        <li>
+                        <div class="floating-group">
+                            <input type="text" id="name" name="name" class="forminput" placeholder=" " required>
+                            <label for="name">Full Name</label>
+                        </div>
+                        </li>
 
-                        <h4 class="forminputtitle">Name</h4>
-                        <input type="text" class="forminput">
+                        <!-- Email Address -->
+                        <li>
+                        <div class="floating-group">
+                            <input type="email" id="email" name="email" class="forminput" placeholder=" " required>
+                            <label for="email">Email Address</label>
+                        </div>
+                        </li>
 
-                        <h4 class="forminputtitle" >Email address</h4>
-                        <input type="text" class="forminput">
+                        <!-- Subject -->
+                        <li>
+                        <div class="floating-group">
+                            <input type="text" id="subject" name="subject" class="forminput" placeholder=" " required>
+                            <label for="subject">Subject</label>
+                        </div>
+                        </li>
 
-                        <h4 class="forminputtitle">Subject</h4>
-                        <input type="text" class="forminput">
+                        <!-- Message -->
+                        <li>
+                        <div class="floating-group">
+                            <textarea id="message" name="message" class="forminput" placeholder=" " required></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        <sub><em>500 Characters <b>MAX</b></em></sub>
+                        </li>
 
-                        <h4 class="forminputtitle">Message</h4>
-                        <input type="text" class="forminput">
-                        <sub>
-                            <em>500 Characters <b>MAX</b>
-                            </em>
-                        </sub>
                         <br>
                         <div class="formsendamessage">
-
-
-                            <button class="btn">Send Messsage</button>
+                        <button class="btn">Send Message</button>
                         </div>
 
                     </ul>
