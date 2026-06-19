@@ -206,7 +206,7 @@ main.main_content{
 .orgname{
     text-decoration: underline;
     color: var(--void);
-    /* background-color: var(--flicker); */
+    background-color: var(--flicker);
     padding: var(--spacing-xs) var(--spacing-sm);
     border-radius: var(--border-radius-sm);
 
