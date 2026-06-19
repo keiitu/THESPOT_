@@ -308,7 +308,7 @@ main.main_content{
     border-radius: 8px;
     margin: 1rem 0;
 }
-/*Styles the footer*/
+/* Styles the footer
 .footer{
     background-color: var(--void);
     border-top:1px solid var(--threshold);
@@ -318,13 +318,13 @@ main.main_content{
 }
 .newsletterinputfield{
     margin-bottom: var(--spacing-md);
-}
-.newsletterhead, .socialmediavisit{
+} */
+/* .newsletterhead, .socialmediavisit{ */
     /* color: var(--flicker);
     font-weight: 200;
     padding: 0px 0px 5px 2px;
     font-size: medium; */
-    font-family: var(--heading-font);
+    /* font-family: var(--heading-font);
     margin-bottom: var(--spacing-xs);
 
 }
@@ -378,7 +378,7 @@ main.main_content{
     margin-top: var(--spacing-md);
     opacity:0.7;
 
-}
+} */
 /* Responsiveness: Tablet(min-width 640px */
 @media(min-width: 640px){
     body.body{
@@ -1146,3 +1146,334 @@ input{
     opacity: 0.8;
 }
 
+
+
+/* Target both .footer class and <footer> tag */
+.footer,
+footer {
+  background-color: var(--void);
+  border-top: 1px solid var(--threshold);
+  width: 100%;
+  padding: var(--spacing-lg) var(--spacing-md);
+  margin-top: var(--spacing-lg);
+  text-align: center;
+  position: relative;
+}
+
+/* Newsletter section */
+.footer .newsletterinputfield,
+footer .newsletterinputfield {
+  margin-bottom: var(--spacing-md);
+}
+
+/* Newsletter heading */
+.footer .newsletterhead,
+footer .newsletterhead {
+  font-family: var(--heading-font);
+  margin-bottom: var(--spacing-xs);
+}
+
+/* Newsletter form */
+.footer form,
+footer form {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--spacing-xs);
+}
+
+.footer input[type="text"],
+.footer input[type="email"],
+footer input[type="text"],
+footer input[type="email"] {
+  padding: var(--spacing-xs);
+  border-radius: var(--border-radius-lg);
+  border: 1px solid var(--threshold);
+  background-color: var(--witness);
+  color: var(--void);
+  width: 200px;
+}
+
+/* Newsletter button */
+.footer .btn,
+footer .btn {
+  background-color: var(--portal);
+  color: var(--witness);
+  border: none;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--border-radius-lg);
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.footer .btn:hover,
+footer .btn:hover {
+  background-color: #6a2be0;
+}
+
+/* Footer quick navigation */
+.footer .footerquicknav,
+footer .footerquicknav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--spacing-md);
+  margin: var(--spacing-sm) 0;
+}
+
+.footer .footerquicknav a,
+footer .footerquicknav a {
+  color: var(--flicker);
+  text-decoration: none;
+  padding: 0.2rem 0.5rem;
+}
+
+.footer .footerquicknav a:hover,
+footer .footerquicknav a:hover {
+  color: var(--portal);
+  text-decoration: none;
+}
+
+/* Social media links */
+.footer .socialmedialinks,
+footer .socialmedialinks {
+  margin: var(--spacing-sm) 0;
+}
+
+.footer .socialmedialinks a,
+footer .socialmedialinks a {
+  display: inline-block;
+  margin: 0 var(--spacing-xs);
+  color: var(--flicker);
+  padding: var(--spacing-sm);
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.footer .socialmedialinks a:hover,
+footer .socialmedialinks a:hover {
+  color: var(--portal);
+  opacity: 1;
+}
+
+/* Copyright */
+.footer .orgcopyright,
+footer .orgcopyright {
+  font-size: 0.75rem;
+  margin-top: var(--spacing-md);
+  opacity: 0.7;
+}
+
+/* Social media heading */
+.footer .socialmediavisit,
+footer .socialmediavisit {
+  font-family: var(--heading-font);
+  margin-bottom: var(--spacing-xs);
+}
+
+/* Responsive: Mobile */
+@media (max-width: 640px) {
+  .footer form,
+  footer form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer input[type="text"],
+  .footer input[type="email"],
+  footer input[type="text"],
+  footer input[type="email"] {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .footer .footerquicknav,
+  footer .footerquicknav {
+    flex-direction: column;
+    gap: var(--spacing-xs);
+  }
+
+  .footer .socialmedialinks a,
+  footer .socialmedialinks a {
+    padding: var(--spacing-xs);
+  }
+}
+
+
+
+
+/* ----- HEADER: Glass + Floating + 3D Depth ----- */
+header.header {
+  position: fixed;
+  top: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 95%;
+  max-width: 1400px;
+  z-index: 1000;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 2rem;
+  border-radius: 2rem;
+  background: rgba(26, 26, 46, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(124, 58, 237, 0.15);
+  box-shadow:
+    0 12px 40px rgba(0, 0, 0, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+  height: auto;
+  gap: var(--spacing-sm);
+}
+
+header.header.scrolled {
+  top: 0;
+  width: 100%;
+  border-radius: 0;
+  border: none;
+  background: rgba(26, 26, 46, 0.92);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
+}
+
+/* Animated gradient border on header */
+header.header::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, var(--portal), var(--flicker), var(--portal));
+  background-size: 200% 100%;
+  animation: borderShimmer 4s ease-in-out infinite;
+  border-radius: 0 0 2rem 2rem;
+}
+
+header.header.scrolled::after {
+  border-radius: 0;
+}
+
+/* NAV LINKS: 3D Tilted Buttons */
+.menu .linklist a {
+  display: inline-block;
+  padding: 0.5rem 1.2rem;
+  color: var(--flicker);
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 2rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(4px);
+  box-shadow:
+    0 2px 8px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+}
+
+.menu .linklist a:hover {
+  transform: translateY(-3px) scale(1.02);
+  background: rgba(124, 58, 237, 0.15);
+  border-color: var(--portal);
+  box-shadow:
+    0 8px 25px rgba(124, 58, 237, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.menu .linklist a.active {
+  background: rgba(124, 58, 237, 0.15);
+  border-color: var(--portal);
+  box-shadow: 0 0 20px rgba(124, 58, 237, 0.15);
+}
+
+/* ----- FOOTER: 3D Raised + Textured ----- */
+.footer,
+footer {
+  position: relative;
+  background: var(--void);
+  border-radius: 2rem 2rem 0 0;
+  box-shadow:
+    0 -12px 40px rgba(0, 0, 0, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.03);
+  border-top: 1px solid rgba(124, 58, 237, 0.1);
+  padding: var(--spacing-xl) var(--spacing-md);
+  margin-top: var(--spacing-lg);
+  overflow: hidden;
+}
+
+/* Animated gradient border on footer */
+.footer::before,
+footer::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, var(--portal), var(--flicker), var(--portal));
+  background-size: 200% 100%;
+  animation: borderShimmer 4s ease-in-out infinite;
+  border-radius: 2rem 2rem 0 0;
+}
+
+/* Subtle dot pattern texture */
+.footer::after,
+footer::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(circle, rgba(124, 58, 237, 0.03) 1px, transparent 1px);
+  background-size: 20px 20px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Ensure footer content sits above texture */
+.footer > *,
+footer > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* ----- SOCIAL ICONS: 3D Buttons ----- */
+.socialmedialinks a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  margin: 0 var(--spacing-xs);
+  color: var(--flicker);
+  text-decoration: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+}
+
+.socialmedialinks a:hover {
+  transform: translateY(-5px) scale(1.05);
+  background: rgba(124, 58, 237, 0.15);
+  border-color: var(--portal);
+  box-shadow:
+    0 8px 25px rgba(124, 58, 237, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.socialmedialinks a:active {
+  transform: translateY(0) scale(0.95);
+}
+
+/* ----- ANIMATIONS ----- */
+@keyframes borderShimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
