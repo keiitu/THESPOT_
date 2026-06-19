@@ -520,7 +520,7 @@ main.main_content{
 .locationandcontactdetails{
     list-style: none;
 }
-/* .formfield{
+.formfield{
     border-radius: var(--border-radius-md);
     color: var(--witness);
     background-color: var(--threshold);
@@ -530,7 +530,7 @@ main.main_content{
 input{
     line-height: var(--spacing-md);
 }
-*/
+
 .contactformdetailinput{
     padding: var(--spacing-lg);
     border-radius: var(--border-radius-sm);
