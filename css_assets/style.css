@@ -141,7 +141,7 @@ header.header{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem var(--spacing-md);
+    padding: 1rem var(--spacing-md) var(--spacing-s);
     border-bottom: 1px solid var(--threshold);
     background-color: var(--void);
     gap: var(--spacing-sm);
@@ -198,6 +198,8 @@ main.main_content{
 .welcome_message{
     text-align: center;
     font-size: 2.2rem;
+    padding-top: var(--spacing-xl);
+
 
 
 }
@@ -209,6 +211,7 @@ main.main_content{
     /* background-color: var(--flicker); */
     padding: var(--spacing-xs) var(--spacing-sm);
     border-radius: var(--border-radius-sm);
+    size: var(--spacing-sm);
 
 }
 /* .glow-text {
@@ -400,9 +403,10 @@ main.main_content{
 /* Responsiveness: Tablet(min-width 640px */
 @media(min-width: 640px){
     body.body{
-        padding-top: 100px;
+        padding-top: var(--spacing-xl);
     }
     .welcome_message {
+        padding-top: var(--spacing-s);
         font-size: 2.8rem;
 
     }
