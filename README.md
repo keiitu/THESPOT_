@@ -16,11 +16,11 @@ A world where every mind finds witness, where art is recognised as both archive 
 
 
 Target Audience:
-•	Artists (emerging and established) seeking a non-commercial platform
-•	Art enthusiasts
-•	Mental health advocates and organisations
-•	Individuals exploring mental health
-•	Students, educators, and researchers
+1. Artists (emerging and established) seeking a non-commercial platform
+2.	Art enthusiasts
+3. Mental health advocates and organisations
+4. Individuals exploring mental health
+5. Students, educators, and researchers
 
 The Realms:
 Each realm within THE SPOT represents a distinct artistic medium and serves as a gateway into the different expression of the mind’s interior landscape.
