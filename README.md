@@ -1,8 +1,6 @@
-# THESPOT - WEDE5020 Project
+# THESPOT - Web Development Project
 
-### Student Information
-Student Number: 10496139
-Student Name: Mamakoko Chief Keitumetse
+
 
 # Project Overview
 Name: THE SPOT
